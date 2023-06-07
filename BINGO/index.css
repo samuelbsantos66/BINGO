@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24vh;
+    background-color: black;
+    color: white;
+}
+
+
+div#dropdown {
+    background-color: green;
+}
+
+div#dropdown a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: inline-block;
+}
+
+ul {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:hover {
+    background: #555;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+ul li ul {
+    position: absolute;
+    width: 200px;
+    display: none;
+}
+
+ul li ul li {
+    background: #555;
+    display: block;
+}
+
+ul li ul li a {
+    display: block !important;
+}
+
+ul li ul li:hover {
+    background: #666;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main section#cartelas {
+    width: 70%;
+    height: 76vh;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main section#numeros {
+    width: 30%;
+    height: 76vh;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+}
+
+section#cartelas div {
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+button {
+    height: 30px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+button:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid #F5CB8E;
+    cursor: pointer;
+}
+
+section#numeros h2 {
+    margin-top: 20px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    height: 30px;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
