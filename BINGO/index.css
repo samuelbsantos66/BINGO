@@ -13,62 +13,20 @@ header {
     color: white;
 }
 
-
-div#dropdown {
-    background-color: green;
-}
-
-div#dropdown a {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-    padding: 15px;
-    display: inline-block;
-}
-
-ul {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-ul li {
-    display: inline-block;
-}
-
-ul li:hover {
-    background: #555;
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-ul li ul {
-    position: absolute;
-    width: 200px;
-    display: none;
-}
-
-ul li ul li {
-    background: #555;
-    display: block;
-}
-
-ul li ul li a {
-    display: block !important;
-}
-
-ul li ul li:hover {
-    background: #666;
-}
-
 main {
     display: flex;
     flex-direction: row;
 }
 
+main section#cartelas div#espaco_cartelas {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 main section#cartelas {
+    padding: 10px;
     width: 70%;
     height: 76vh;
     background-color: yellow;
@@ -82,7 +40,19 @@ main section#numeros {
     height: 76vh;
     background-color: darkgray;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section#numeros h2 {
+    height: 92px
+}
+
+main section#numeros div {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+
 }
 
 section#cartelas div {
@@ -90,6 +60,30 @@ section#cartelas div {
     display: flex;
     width: 100%;
     justify-content: space-around;
+}
+
+.cartela {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+
 }
 
 button {

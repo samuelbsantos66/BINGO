@@ -1,4 +1,6 @@
 var jogadores = []
+var nomeJogador;
+
 function gerarNumerosAleatorios(quantidade, min, max) {
 
     if (quantidade > (max - min)) {
@@ -32,7 +34,8 @@ function gerarCartela() {
 
     desenharCartela(nomeJogador, cartela);
 
-    console.log(jogadores)
+    console.log(jogadores);
+
 }
 
 function reiniciarJogo() {
@@ -40,7 +43,16 @@ function reiniciarJogo() {
 }
 
 function desenharCartela(nomeJogador, cartela) {
+
     var div = document.getElementById('espaco_cartelas');
+
+    var div2 = document.createElement('div');
+
+    div2.className = 'cartela';
+
+    var nome = document.createElement('h4');
+
+    nome.innerText = nomeJogador;
 
     var tabela = document.createElement('table');
 
@@ -78,11 +90,23 @@ function desenharCartela(nomeJogador, cartela) {
         tabela.appendChild(tr)
     }
 
+
     tabela.appendChild(thead);
-    div.appendChild(tabela);
-
-
+    div2.appendChild(nome);
+    div2.appendChild(tabela)
+    div.appendChild(div2);
 
 
 
 }
+
+function sorteio() {
+
+    var div = document.getElementById('sorteio')
+    var n = document.createElement('h2');
+    n.innerText = Math.floor(Math.random() * 75);
+
+    div.appendChild(n)
+
+}
+
